@@ -78,11 +78,24 @@ svg.material-icons:not(:last-child) {
   fill: #888;
 }
 
+.tracklist-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  flex-direction: row;
+}
+
 .card-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 16px;
+  margin: 16px;
+  padding: 16px;
+  background-color: #b69252;
+
+  h1 {
+    color: rgb(34, 14, 14);
+  }
 }
 
 .card {
@@ -91,7 +104,7 @@ svg.material-icons:not(:last-child) {
   border: 1px solid #eee;
   background-color: #fafafa;
   height: 40px;
-  width: 200px;
+  width: 500px;
   margin: 0 8px 16px;
   padding: 16px;
   display: flex;
