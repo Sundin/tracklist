@@ -13,6 +13,11 @@
 
   <div class="card" >
     <span>+ Add track...</span>
+    <div>
+      <input id="title" [(ngModel)]="newTrack.title" placeholder="Track title"/>
+      <input id="length" [(ngModel)]="newTrack.length" placeholder="00:00"/>
+      <button (click)="onAddTrack()">Add</button>
+    </div>
   </div>
 
   <p>Running length {{title}}: {{sideLength() | formatLength}}</p>

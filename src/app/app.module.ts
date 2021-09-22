@@ -7,6 +7,7 @@ import { TrackComponent } from './track/track.component';
 import { SideComponent } from './side/side.component';
 import { FormatLengthPipe } from './format-length.pipe';
 import { DragDropModule } from '@angular/cdk/drag-drop';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
     BrowserModule,
     AppRoutingModule,
     DragDropModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
