@@ -8,16 +8,7 @@ import { Track } from '../track';
 })
 export class SideComponent implements OnInit {
   @Input() title?: string;
-  tracks: Track[] = [
-    {
-      title: "Track 1...",
-      lengthInSeconds: 125,
-    },
-    {
-      title: "Track 2...",
-      lengthInSeconds: 81,
-    },
-  ];
+  @Input() tracks: Track[] = [];
 
   sideLength(): number {
     return this.tracks.reduce(

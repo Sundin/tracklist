@@ -28,12 +28,12 @@
   <p>Need help calculating the running time of the A/B sides of your upcoming record?</p>
 
   <div class="tracklist-container">
-    <app-side title="Side A"></app-side>
+    <app-side title="Side A" [tracks]="tracksSideA"></app-side>
 
-    <app-side title="Side B"></app-side>
+    <app-side title="Side B" [tracks]="tracksSideB"></app-side>
   </div>
 
-  <p>Total running length: 10:00</p>
+  <p>Total running length: {{totalLength() | formatLength}}</p>
 
 
   <!-- Footer -->
