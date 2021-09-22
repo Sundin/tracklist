@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { TrackComponent } from './track/track.component';
 import { SideComponent } from './side/side.component';
 import { FormatLengthPipe } from './format-length.pipe';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FormatLengthPipe } from './format-length.pipe';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    DragDropModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

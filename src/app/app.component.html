@@ -28,9 +28,21 @@
   <p>Need help calculating the running time of the A/B sides of your upcoming record?</p>
 
   <div class="tracklist-container">
-    <app-side title="Side A" [tracks]="tracksSideA"></app-side>
+    <app-side title="Side A" [tracks]="tracksSideA"
+      cdkDropList
+      #sideAList="cdkDropList"
+      [cdkDropListData]="tracksSideA"
+      [cdkDropListConnectedTo]="[sideBList]"
+      (cdkDropListDropped)="onDrop($event)"
+    ></app-side>
 
-    <app-side title="Side B" [tracks]="tracksSideB"></app-side>
+    <app-side title="Side B" [tracks]="tracksSideB"
+      cdkDropList
+      #sideBList="cdkDropList"
+      [cdkDropListData]="tracksSideB"
+      [cdkDropListConnectedTo]="[sideAList]"
+      (cdkDropListDropped)="onDrop($event)"
+    ></app-side>
   </div>
 
   <p>Total running length: {{totalLength() | formatLength}}</p>
