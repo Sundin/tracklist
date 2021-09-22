@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'tracklist';
+  tracks = ['Track 1...', 'Track 2...', 'Track 3...'];
 }
