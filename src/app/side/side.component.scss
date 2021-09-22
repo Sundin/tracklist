@@ -1,0 +1,15 @@
+
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 16px;
+  padding: 16px;
+  background-color: #b69252;
+
+  h1 {
+    color: rgb(34, 14, 14);
+  }
+}

@@ -28,26 +28,9 @@
   <p>Need help calculating the running time of the A/B sides of your upcoming record?</p>
 
   <div class="tracklist-container">
-    <div class="card-container">
-      <h1>Side A</h1>
+    <app-side title="Side A"></app-side>
 
-      <div *ngFor="let track of tracks">
-        <app-track [track]="track"></app-track>
-      </div>
-
-      <p>Running length side A: 10:00</p>
-    </div>
-
-    <div class="card-container">
-      <h1>Side B</h1>
-
-      <div *ngFor="let track of tracks">
-        <app-track [track]="track"></app-track>
-      </div>
-
-      <p>Running length side B: 10:00</p>
-
-    </div>
+    <app-side title="Side B"></app-side>
   </div>
 
   <p>Total running length: 10:00</p>

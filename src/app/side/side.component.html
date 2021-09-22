@@ -1,0 +1,9 @@
+<div class="card-container">
+  <h1>{{title}}</h1>
+
+  <div *ngFor="let track of tracks">
+    <app-track [track]="track"></app-track>
+  </div>
+
+  <p>Running length {{title}}: 10:00</p>
+</div>
