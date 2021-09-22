@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Track } from './track';
 import {CdkDragDrop, moveItemInArray, transferArrayItem} from '@angular/cdk/drag-drop';
+import { isDevMode } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +11,7 @@ import {CdkDragDrop, moveItemInArray, transferArrayItem} from '@angular/cdk/drag
 export class AppComponent {
   title = 'tracklist';
 
-  tracksSideA: Track[] = [
+  tracksSideA: Track[] = isDevMode() ? [
     {
       title: "Track 1...",
       lengthInSeconds: 125,
@@ -19,9 +20,9 @@ export class AppComponent {
       title: "Track 2...",
       lengthInSeconds: 81,
     },
-  ];
+  ] : [];
 
-  tracksSideB: Track[] = [
+  tracksSideB: Track[] = isDevMode() ? [
     {
       title: "Track 3...",
       lengthInSeconds: 175,
@@ -30,7 +31,7 @@ export class AppComponent {
       title: "Track 4...",
       lengthInSeconds: 181,
     },
-  ];
+  ]: [];
 
   totalLength(): number {
     return this.tracksSideA.concat(this.tracksSideB).reduce(
