@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Track } from '../track';
 
 @Component({
   selector: 'app-track',
@@ -6,8 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./track.component.scss']
 })
 export class TrackComponent implements OnInit {
-  @Input()title: string = "Track name";
-  @Input() length: string = "03:00";
+  @Input() track?: Track;
 
   constructor() { }
 

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Track } from './track';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +8,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'tracklist';
-  tracks = ['Track 1...', 'Track 2...', 'Track 3...'];
+  tracks: Track[] = [
+    {
+      title: "Track 1...",
+      length: "04:00",
+    },
+    {
+      title: "Track 2...",
+      length: "04:00",
+    },
+  ];
 }
