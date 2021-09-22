@@ -19,6 +19,11 @@ export class SideComponent implements OnInit {
     },
   ];
 
+  sideLength(): number {
+    return this.tracks.reduce(
+      (previousValue, currentValue) => previousValue + currentValue.lengthInSeconds, 0);
+  }
+
   constructor() { }
 
   ngOnInit(): void {
