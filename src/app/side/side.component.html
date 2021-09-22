@@ -1,8 +1,14 @@
 <div class="card-container">
   <h1>{{title}}</h1>
 
-  <div *ngFor="let track of tracks">
-    <app-track [track]="track"></app-track>
+  <div class="list"
+    cdkDropList
+    [cdkDropListData]="tracks"
+    (cdkDropListDropped)="onDrop($event)"
+  >
+    <div *ngFor="let track of tracks">
+      <app-track [track]="track"></app-track>
+    </div>
   </div>
 
   <p>Running length {{title}}: {{sideLength() | formatLength}}</p>
