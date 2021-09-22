@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TrackComponent } from './track/track.component';
 import { SideComponent } from './side/side.component';
+import { FormatLengthPipe } from './format-length.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     TrackComponent,
-    SideComponent
+    SideComponent,
+    FormatLengthPipe,
   ],
   imports: [
     BrowserModule,

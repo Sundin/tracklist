@@ -11,11 +11,11 @@ export class SideComponent implements OnInit {
   tracks: Track[] = [
     {
       title: "Track 1...",
-      length: "04:00",
+      lengthInSeconds: 125,
     },
     {
       title: "Track 2...",
-      length: "04:00",
+      lengthInSeconds: 81,
     },
   ];
 
