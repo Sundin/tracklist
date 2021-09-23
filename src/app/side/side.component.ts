@@ -11,6 +11,7 @@ import {CdkDragDrop, moveItemInArray, transferArrayItem} from '@angular/cdk/drag
 export class SideComponent implements OnInit {
   @Input() title?: string;
   @Input() tracks: Track[] = [];
+  @Input() longestSide: number = 0;
 
   newTrack: any = {
     title: "",
@@ -76,5 +77,9 @@ export class SideComponent implements OnInit {
   // This way we can use the this keyword without binding it.
   onDeleteTrack = (track: Track) =>  {
     this.tracks = this.tracks.filter(t => t.id !== track.id);
+  }
+
+  calculateHeight() {
+    return this.longestSide * 80 + 95;
   }
 }

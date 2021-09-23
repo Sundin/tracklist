@@ -5,6 +5,7 @@
     cdkDropList
     [cdkDropListData]="tracks"
     (cdkDropListDropped)="onDrop($event)"
+    [ngStyle] = "{'height.px': calculateHeight()}"
   >
     <p [hidden]="tracks.length !== 0">Add some tracks to get started</p>
     <div *ngFor="let track of tracks">

@@ -10,6 +10,7 @@ import { isDevMode } from '@angular/core';
 })
 export class AppComponent {
   title = 'tracklist';
+  math = Math;
 
   tracksSideA: Track[] = isDevMode() ? [
     {

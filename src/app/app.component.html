@@ -31,11 +31,13 @@
     <app-side
       title="Side A"
       [tracks]="tracksSideA"
+      [longestSide]="math.max(tracksSideA.length, tracksSideB.length)"
     ></app-side>
 
     <app-side
       title="Side B"
       [tracks]="tracksSideB"
+      [longestSide]="math.max(tracksSideA.length, tracksSideB.length)"
     ></app-side>
   </div>
 
