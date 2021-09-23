@@ -25,6 +25,7 @@
   <!-- Tracklist -->
   <h2>Tracklist Helper</h2>
   <p>Need help calculating the running time of the A/B sides of your upcoming record?</p>
+  <p [hidden]="tracksSideA.length === 0 && tracksSideB.length === 0">Pro tip: Drag and drop your tracks to rearrange them.</p>
 
   <div class="tracklist-container" cdkDropListGroup>
     <app-side
