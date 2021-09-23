@@ -8,7 +8,7 @@
   margin: 16px;
   padding: 16px;
   background-color: $secondarycolor;
-  border-radius: 8px;
+  border-radius: 2 * $borderradius;
 
   h1 {
     color: $textcolor;
@@ -34,6 +34,8 @@
     input {
       border: 2px solid $inputcolor;
       background-color: $inputcolor;
+      border-radius: $borderradius;
+
       &.invalid {
         animation-name: blinker;
         animation-duration: 0.5s;

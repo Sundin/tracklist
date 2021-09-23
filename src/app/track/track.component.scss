@@ -13,6 +13,18 @@
   box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
 }
 
+button {
+  background-color: $deleteButtonColor;
+  color: $secondarytextcolor;
+  margin-right: 20px;
+
+  &:hover {
+    background-color: $secondarytextcolor;
+    color: $deleteButtonColor;
+    border: 2px solid $deleteButtonColor;
+  }
+}
+
 /* Responsive Styles */
 @media screen and (max-width: 767px) {
   .card {

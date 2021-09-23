@@ -16,6 +16,10 @@ $hoverlinkcolor: #125699;
 $textcolor: rgb(255, 239, 239);
 $secondarytextcolor: rgb(255, 239, 239);
 
+$deleteButtonColor: rgb(158, 47, 47);
+$okButtonColor: #4CAF50;
+$borderradius: 4px;
+
 html {
   background-color: $background;
 }
@@ -24,7 +28,7 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-radius: 4px;
+  border-radius: $borderradius;
   border: $borderstyle;
   background-color: $newtrackcolor;
   height: 40px;
@@ -34,4 +38,26 @@ html {
   transition: all 0.2s ease-in-out;
   line-height: 24px;
   cursor: pointer;
+}
+
+button {
+  background-color: $okButtonColor;
+  color: white;
+  border: none;
+  padding: 6px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: $borderradius;
+
+  &:hover {
+    background-color: $secondarytextcolor;
+    color: $okButtonColor;
+    border: 2px solid $okButtonColor;
+  }
 }
