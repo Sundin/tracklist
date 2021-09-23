@@ -17,6 +17,9 @@ export class SideComponent implements OnInit {
     length: "",
   }
 
+  invalidTitle = false;
+  invalidLength = false;
+
   sideLength(): number {
     return this.tracks.reduce(
       (previousValue, currentValue) => previousValue + currentValue.lengthInSeconds, 0);
@@ -45,9 +48,16 @@ export class SideComponent implements OnInit {
     const seconds = parseInt(trackLength[1]);
 
     if (!this.newTrack.title) {
-      return;
+      this.invalidTitle = true;
     }
-    if (!this.newTrack.length) {
+    if (!this.newTrack.length || isNaN(minutes) || isNaN(seconds)) {
+      this.invalidLength = true;
+    }
+    if (this.invalidTitle || this.invalidLength) {
+      setTimeout(() => {
+        this.invalidTitle = false;
+        this.invalidLength = false;
+      }, 1500);
       return;
     }
 
