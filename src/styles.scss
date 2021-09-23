@@ -1,19 +1,23 @@
-$color1: #80725b;
+$color1: #ffd285;
 $color2: #805f29;
 $color3: #ffe4b7;
 $color4: #ffbe52;
-$color5: #ffd285;
+$color5: #ffe1b0;
 
-$background: $color5;
-$secondarycolor: $color1;
-$trackcolor: $color4;
-$newtrackcolor: $color5;
+$background: #a59191;
+$secondarycolor: rgb(120, 32, 32);
+$trackcolor: rgb(205, 134, 28);
+$newtrackcolor: rgb(158, 47, 47);
 $borderstyle: 1px solid rgb(205, 134, 28);
 
-$textcolor: #333;
-$secondarytextcolor: #fff;
+$textcolor: rgb(255, 239, 239);
+$secondarytextcolor: rgb(255, 239, 239);
 
 // #d22519
+
+// rgb(205, 134, 28); gul
+// rgb(158, 47, 47); röd
+// #79c68b; grön
 
 html {
   background-color: $background;
