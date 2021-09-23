@@ -42,6 +42,11 @@
         animation-iteration-count: 3;
         animation-direction: alternate;
       }
+
+      &:focus{
+        outline: none;
+        border: 3px solid $trackcolor;
+      }
     }
   }
 }
