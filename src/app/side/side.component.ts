@@ -47,6 +47,10 @@ export class SideComponent implements OnInit {
       title:this.newTrack.title,
       lengthInSeconds: minutes * 60 + seconds,
     });
+    this.newTrack = {
+      title: "",
+      length: "",
+    };
   }
 
 }
