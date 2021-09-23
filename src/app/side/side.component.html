@@ -13,10 +13,10 @@
 
   <div class="card" >
     <span>+ Add track...</span>
-    <div class="input-form">
+    <div class="input-form" (keyup.enter)="onAddTrack()">
       <input id="title" [(ngModel)]="newTrack.title" placeholder="Track title"/>
       <input id="length" [(ngModel)]="newTrack.length" placeholder="00:00"/>
-      <button (click)="onAddTrack()">Add</button>
+      <button (click)="onAddTrack()" type="submit" (keyup.enter)="onAddTrack()">Add</button>
     </div>
   </div>
 
