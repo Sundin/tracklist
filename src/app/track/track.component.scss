@@ -1,8 +1,10 @@
+@import "../../styles.scss";
+
 .card {
   all: unset;
   border-radius: 4px;
   border: 1px solid #eee;
-  background-color: #fafafa;
+  background-color: $color4;
   height: 40px;
   width: 500px;
   margin: 0 8px 16px;
