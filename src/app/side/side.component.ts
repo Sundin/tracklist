@@ -43,6 +43,14 @@ export class SideComponent implements OnInit {
     const trackLength = this.newTrack.length.split(":");
     const minutes = parseInt(trackLength[0]);
     const seconds = parseInt(trackLength[1]);
+
+    if (!this.newTrack.title) {
+      return;
+    }
+    if (!this.newTrack.length) {
+      return;
+    }
+
     this.tracks.push({
       title:this.newTrack.title,
       lengthInSeconds: minutes * 60 + seconds,
