@@ -29,6 +29,8 @@
     justify-content: space-between;
 
     input {
+      border: 2px solid $inputcolor;
+      background-color: $inputcolor;
       &.invalid {
         animation-name: blinker;
         animation-duration: 0.5s;
