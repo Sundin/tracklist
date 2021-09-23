@@ -3,8 +3,8 @@
 .card {
   all: unset;
   border-radius: 4px;
-  border: 1px solid #eee;
-  background-color: $color4;
+  border: $borderstyle;
+  background-color: $trackcolor;
   height: 40px;
   width: 500px;
   margin: 0 8px 16px;
@@ -18,17 +18,9 @@
   cursor: pointer;
 }
 
-.card svg.material-icons path {
-  fill: #888;
-}
-
 .card:hover {
   transform: translateY(-3px);
   box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
-}
-
-.card:hover .material-icons path {
-  fill: rgb(105, 103, 103);
 }
 
 /* Responsive Styles */

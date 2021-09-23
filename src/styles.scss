@@ -4,8 +4,17 @@ $color3: #ffe4b7;
 $color4: #ffbe52;
 $color5: #ffd285;
 
+$background: $color5;
+$secondarycolor: $color1;
+$trackcolor: $color4;
+$newtrackcolor: $color5;
+$borderstyle: 1px solid rgb(205, 134, 28);
+
+$textcolor: #333;
+$secondarytextcolor: #fff;
+
 // #d22519
 
 html {
-  background-color: $color5;
+  background-color: $background;
 }

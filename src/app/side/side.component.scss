@@ -7,10 +7,10 @@
   justify-content: center;
   margin: 16px;
   padding: 16px;
-  background-color: $color2;
+  background-color: $secondarycolor;
 
   h1 {
-    color: rgb(34, 14, 14);
+    color: $textcolor;
   }
 }
 
@@ -19,8 +19,8 @@
   flex-direction: column;
   justify-content: center;
   border-radius: 4px;
-  border: 1px solid rgb(205, 134, 28);
-  background-color: $color5;
+  border: $borderstyle;
+  background-color: $newtrackcolor;
   height: 40px;
   width: 500px;
   margin: 0 8px 16px;
