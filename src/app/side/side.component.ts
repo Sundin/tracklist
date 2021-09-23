@@ -64,6 +64,7 @@ export class SideComponent implements OnInit {
     this.tracks.push({
       title:this.newTrack.title,
       lengthInSeconds: minutes * 60 + seconds,
+      id: Date.now().toString(),
     });
     this.newTrack = {
       title: "",
@@ -71,4 +72,9 @@ export class SideComponent implements OnInit {
     };
   }
 
+  // Use fat arrow function in order to inherit the context of the parent scope.
+  // This way we can use the this keyword without binding it.
+  onDeleteTrack = (track: Track) =>  {
+    this.tracks = this.tracks.filter(t => t.id !== track.id);
+  }
 }

@@ -8,10 +8,17 @@ import { Track } from '../track';
 })
 export class TrackComponent implements OnInit {
   @Input() track?: Track;
+  @Input() onDeleteTrack?: Function;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  onDelete() {
+    if (!this.onDeleteTrack || !this.track) {
+      return;
+    }
+    this.onDeleteTrack(this.track);
+  }
 }

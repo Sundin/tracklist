@@ -8,7 +8,7 @@
   >
     <p [hidden]="tracks.length !== 0">Add some tracks to get started</p>
     <div *ngFor="let track of tracks">
-      <app-track [track]="track"></app-track>
+      <app-track [track]="track" [onDeleteTrack]="onDeleteTrack"></app-track>
     </div>
   </div>
 

@@ -15,10 +15,12 @@ export class AppComponent {
     {
       title: "Track 1",
       lengthInSeconds: 125,
+      id: "1",
     },
     {
       title: "Track 2",
       lengthInSeconds: 81,
+      id: "2",
     },
   ] : [];
 
