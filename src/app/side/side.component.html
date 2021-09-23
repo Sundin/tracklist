@@ -6,6 +6,7 @@
     [cdkDropListData]="tracks"
     (cdkDropListDropped)="onDrop($event)"
   >
+    <p [hidden]="tracks.length !== 0">Add some tracks to get started</p>
     <div *ngFor="let track of tracks">
       <app-track [track]="track"></app-track>
     </div>
