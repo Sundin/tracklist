@@ -18,6 +18,11 @@
 .card {
   border: $borderstyle;
   background-color: $newtrackcolor;
+
+  .input-form {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .card:hover {
