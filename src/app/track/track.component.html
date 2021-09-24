@@ -1,11 +1,11 @@
 <div *ngIf="track">
 
-<div class="card" cdkDrag >
-  <div>
-    <button (click)="onDelete()">X</button>
-    <span>{{track.title}}</span>
+  <div class="card" cdkDrag >
+    <div>
+      <button (click)="onDelete()">X</button>
+      <span>{{track.title}}</span>
+    </div>
+    <span>{{track.lengthInSeconds | formatLength}}</span>
   </div>
-  <span>{{track.lengthInSeconds | formatLength}}</span>
-</div>
 
 </div>
