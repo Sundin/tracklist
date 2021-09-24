@@ -34,6 +34,7 @@
       border: 2px solid $inputcolor;
       background-color: $inputcolor;
       border-radius: $borderradius;
+      text-align: center;
 
       &.invalid {
         animation-name: blinker;
