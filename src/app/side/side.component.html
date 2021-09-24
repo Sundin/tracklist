@@ -16,7 +16,7 @@
   <div class="card" >
     <div class="input-form" (keyup.enter)="onAddTrack()">
       <input id="title" [(ngModel)]="newTrack.title" placeholder="Track title" [class.invalid]="invalidTitle"/>
-      <input id="length" [(ngModel)]="newTrack.length" placeholder="00:00" [class.invalid]="invalidLength"/>
+      <input id="length" [(ngModel)]="newTrack.length" placeholder="00:00" [class.invalid]="invalidLength"  (input)="lengthInputChanged($event)"/>
       <button (click)="onAddTrack()" type="submit" (keyup.enter)="onAddTrack()">Add</button>
     </div>
   </div>

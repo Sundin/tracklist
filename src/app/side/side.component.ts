@@ -46,7 +46,7 @@ export class SideComponent implements OnInit {
   onAddTrack() {
     const trackLength = this.newTrack.length.split(":");
     const minutes = parseInt(trackLength[0]);
-    const seconds = parseInt(trackLength[1]);
+    const seconds = parseInt(trackLength[trackLength.length - 1]);
 
     if (!this.newTrack.title) {
       this.invalidTitle = true;
@@ -77,6 +77,12 @@ export class SideComponent implements OnInit {
   // This way we can use the this keyword without binding it.
   onDeleteTrack = (track: Track) =>  {
     this.tracks = this.tracks.filter(t => t.id !== track.id);
+  }
+
+  lengthInputChanged(event: any) {
+    if (this.newTrack.length.length === 2) {
+      this.newTrack.length += ":";
+    }
   }
 
   calculateHeight() {
