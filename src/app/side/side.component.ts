@@ -80,7 +80,7 @@ export class SideComponent implements OnInit {
   }
 
   lengthInputChanged(event: any) {
-    if (this.newTrack.length.length === 2) {
+    if (this.newTrack.length.length === 2 && !this.newTrack.length.includes(":")) {
       this.newTrack.length += ":";
     }
   }
