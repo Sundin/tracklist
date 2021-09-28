@@ -71,6 +71,8 @@ export class SideComponent implements OnInit {
       title: "",
       length: "",
     };
+
+    document.getElementById("title")?.focus();
   }
 
   // Use fat arrow function in order to inherit the context of the parent scope.
