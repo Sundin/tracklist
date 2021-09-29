@@ -1,6 +1,12 @@
-# Tracklist
+# Trakk - The world's premier tracklist maker
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.6.
+:cd: Try out Trakk online at https://trakk.netlify.app/
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d2d617ea-aa5c-41da-9911-53c43a3afdf4/deploy-status)](https://app.netlify.com/sites/trakk/deploys)
+
+Trakk is an online tool used for calculating the running length of each side on a record.
+
+Written using Angular 12.
 
 ## Development server
 
@@ -25,3 +31,7 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## How to contribute
+
+Contributions are welcome. Feel free to open a pull request!
