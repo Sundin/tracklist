@@ -64,6 +64,19 @@
     button {
       max-width: 10%;
     }
+
+    @media screen and (max-width: 767px) {
+      flex-flow: column;
+      align-items: center;
+      gap: 10px;
+
+      button {
+        max-width: unset;
+      }
+      input {
+        max-width: unset;
+      }
+    }
   }
 }
 

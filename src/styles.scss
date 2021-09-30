@@ -31,9 +31,9 @@ html {
   border-radius: $borderradius;
   border: $borderstyle;
   background-color: $newtrackcolor;
-  height: 40px;
+  min-height: 40px;
   width: 80%;
-  min-width: 400px;
+  min-width: 200px;
   margin: 0 8px 16px;
   padding: 16px;
   transition: all 0.2s ease-in-out;
