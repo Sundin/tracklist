@@ -1,5 +1,11 @@
 @import "../../styles.scss";
 
+.track {
+  display: flex;
+  justify-content: center;
+  width: inherit;
+}
+
 .card {
   border: $borderstyle;
   background-color: $trackcolor;
